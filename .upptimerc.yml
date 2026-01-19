@@ -1,0 +1,22 @@
+owner: distr-sh
+repo: status
+
+sites:
+  - name: Distr
+    url: https://app.distr.sh/
+
+status-website:
+  cname: distrstatus.com
+  logoUrl: https://distr.sh/_astro/distr-brand.B2viEnNI_68cTD.svg
+  name: Distr Status
+  introTitle: "View our current health status, previous incidents historic uptime."
+  introMessage: "If you experience any issues, please join our [Discord](https://discord.gg/6qqBSAWZfW) or create an issue on [GitHub](https://github.com/distr-sh/distr)."
+  navbar:
+    - title: Status
+      href: /
+    - title: Website
+      href: https://distr.sh/
+    - title: GitHub
+      href: https://github.com/distr-sh/distr
+    - title: Discord
+      href: https://discord.gg/6qqBSAWZfW
