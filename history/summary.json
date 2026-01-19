@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Distr",
+    "url": "https://app.distr.sh/",
+    "icon": "https://icons.duckduckgo.com/ip3/app.distr.sh.ico",
+    "slug": "distr",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 760,
+    "timeDay": 760,
+    "timeWeek": 760,
+    "timeMonth": 760,
+    "timeYear": 760,
+    "dailyMinutesDown": {}
+  }
+]
