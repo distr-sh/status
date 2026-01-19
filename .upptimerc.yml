@@ -7,7 +7,7 @@ sites:
 
 status-website:
   cname: distrstatus.com
-  logoUrl: https://distr.sh/_astro/distr-brand.B2viEnNI_68cTD.svg
+  logoUrl: /logo-512.png
   themeUrl: /distr-theme.css
   name: Distr Status
   introTitle: "View our current health status, previous incidents historic uptime."
