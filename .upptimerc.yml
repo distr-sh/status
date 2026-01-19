@@ -8,6 +8,7 @@ sites:
 status-website:
   cname: distrstatus.com
   logoUrl: https://distr.sh/_astro/distr-brand.B2viEnNI_68cTD.svg
+  themeUrl: /distr-theme.css
   name: Distr Status
   introTitle: "View our current health status, previous incidents historic uptime."
   introMessage: "If you experience any issues, please join our [Discord](https://discord.gg/6qqBSAWZfW) or create an issue on [GitHub](https://github.com/distr-sh/distr)."
