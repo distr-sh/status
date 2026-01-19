@@ -1,5 +1,5 @@
 :root {
-    --body-background-color: #001716;
+    --body-background-color: oklch(27.8% 0.033 256.848);
     --body-text-color: #f0ffff;
     --card-background-color: oklch(21% 0.034 264.665);
     --nav-background-color: oklch(27.8% 0.033 256.848);
