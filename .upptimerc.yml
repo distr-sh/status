@@ -3,7 +3,7 @@ repo: status
 
 sites:
   - name: Distr
-    url: https://app.distr.sh/
+    url: https://app.distr.sh/ready
 
 status-website:
   cname: distrstatus.com
