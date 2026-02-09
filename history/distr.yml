@@ -1,7 +1,7 @@
 url: https://app.distr.sh/ready
-status: up
-code: 200
-responseTime: 516
-lastUpdated: 2026-02-08T23:21:35.475Z
+status: down
+code: 503
+responseTime: 4610
+lastUpdated: 2026-02-09T21:57:54.250Z
 startTime: 2026-01-19T11:51:09.274Z
 generator: Upptime <https://github.com/upptime/upptime>
