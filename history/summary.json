@@ -4,18 +4,19 @@
     "url": "https://app.distr.sh/ready",
     "icon": "https://icons.duckduckgo.com/ip3/app.distr.sh.ico",
     "slug": "distr",
-    "status": "up",
-    "uptime": "99.24%",
+    "status": "down",
+    "uptime": "99.25%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
-    "uptimeYear": "99.24%",
+    "uptimeYear": "99.25%",
     "time": 708,
     "timeDay": 623,
     "timeWeek": 596,
     "timeMonth": 590,
     "timeYear": 708,
     "dailyMinutesDown": {
+      "2026-03-14": 0,
       "2026-02-10": 463,
       "2026-02-09": 122
     }
