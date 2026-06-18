@@ -11,7 +11,7 @@ status-website:
   themeUrl: https://distrstatus.com/distr-theme.css
   name: Distr Status
   introTitle: "View our current health status, previous incidents historic uptime."
-  introMessage: "If you experience any issues, please join our [Discord](https://discord.gg/6qqBSAWZfW) or create an issue on [GitHub](https://github.com/distr-sh/distr)."
+  introMessage: "If you experience any issues, please [reach out](mailto:support@distr.sh) or create an issue on [GitHub](https://github.com/distr-sh/distr)."
   navbar:
     - title: Status
       href: /
