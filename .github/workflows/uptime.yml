@@ -6,7 +6,7 @@
 # Your changes will be overwritten when the Upptime template updates (by default, weekly)
 # Instead, change .upptimerc.yml configuration and the workflows will be generated accordingly.
 #
-# 🔼 Upptime @v1.46.0
+# 🔼 Upptime @v1.46.5
 # GitHub-powered open-source uptime monitor and status page by Anand Chowdhary
 
 # * Source: https://github.com/upptime/upptime
@@ -34,7 +34,7 @@ jobs:
       - name: Create GitHub App token
         id: app_token
         if: ${{ vars.GH_APP_ID != '' && env.GH_APP_PRIVATE_KEY != '' }}
-        uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3.3.0
+        uses: actions/create-github-app-token@v3
         with:
           client-id: ${{ vars.GH_APP_ID }}
           private-key: ${{ env.GH_APP_PRIVATE_KEY }}
@@ -43,12 +43,12 @@ jobs:
         shell: bash
         run: echo "GH_APP_PRIVATE_KEY=" >> "$GITHUB_ENV"
       - name: Checkout
-        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        uses: actions/checkout@v6
         with:
           ref: ${{ github.head_ref || github.ref_name }}
           token: ${{ steps.app_token.outputs.token || secrets.GH_PAT || github.token }}
       - name: Check endpoint status
-        uses: upptime/uptime-monitor@a284d6064bcbf89db3f1e2a6c533d0e69111573b # v1.46.0
+        uses: upptime/uptime-monitor@v1.46.5
         with:
           command: "update"
         env:
