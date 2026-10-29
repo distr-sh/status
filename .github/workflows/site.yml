@@ -38,7 +38,7 @@ jobs:
       - name: Create GitHub App token
         id: app_token
         if: ${{ vars.GH_APP_ID != '' && env.GH_APP_PRIVATE_KEY != '' }}
-        uses: actions/create-github-app-token@v3
+        uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3.3.0
         with:
           client-id: ${{ vars.GH_APP_ID }}
           private-key: ${{ env.GH_APP_PRIVATE_KEY }}
@@ -47,17 +47,17 @@ jobs:
         shell: bash
         run: echo "GH_APP_PRIVATE_KEY=" >> "$GITHUB_ENV"
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
         with:
           ref: ${{ github.head_ref || github.ref_name }}
           token: ${{ steps.app_token.outputs.token || secrets.GH_PAT || github.token }}
       - name: Generate site
-        uses: upptime/uptime-monitor@v1.46.5
+        uses: upptime/uptime-monitor@74f0683383384927e064d76a5f21f340d6af36fc # v1.46.5
         with:
           command: "site"
         env:
           GH_PAT: ${{ steps.app_token.outputs.token || secrets.GH_PAT || github.token }}
-      - uses: peaceiris/actions-gh-pages@v4
+      - uses: peaceiris/actions-gh-pages@84c30a85c19949d7eee79c4ff27748b70285e453 # v4.1.0
         name: GitHub Pages Deploy
         with:
           github_token: ${{ steps.app_token.outputs.token || secrets.GH_PAT || github.token }}
