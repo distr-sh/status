@@ -4,7 +4,6 @@
     "config:recommended",
     "helpers:pinGitHubActionDigestsToSemver"
   ],
-  "automerge": true,
   "platformAutomerge": false,
   "rebaseWhen": "conflicted",
   "minimumReleaseAge": "1 day",
@@ -13,7 +12,9 @@
       "matchManagers": [
         "github-actions"
       ],
-      "semanticCommitType": "ci"
+      "semanticCommitType": "ci",
+      "automerge": true,
+      "ignoreTests": true
     }
   ]
 }
